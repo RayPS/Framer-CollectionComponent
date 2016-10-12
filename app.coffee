@@ -12,12 +12,13 @@ class CollectionComponent extends Layer
 			@cell = (cell) ->
 		} = options
 		
-		throw Error "cell is not a function" if typeof cell is not "function"
-		
 		@rows = Math.floor @amount / @columns
 		@width = @cellWidth * @columns + @gutter * (@columns - 1)
 		@height = @cellHeight * @rows + @gutter * (@rows - 1)
+		@backgroundColor = options.backgroundColor ? "transparent"
 		@render()
+		
+		throw Error "cell is not a function" if typeof @cell is not "function"
 	
 	render: ->
 		palette = @randomPalette()
@@ -28,7 +29,7 @@ class CollectionComponent extends Layer
 			
 			@cell new Layer
 				parent: @
-				name: "cell_#{i}"
+				name: "#{offsetY + 1}-#{offsetX + 1}"
 				width:  @cellWidth
 				height: @cellHeight
 				x: offsetX * @cellWidth  + offsetX * @gutter
@@ -48,5 +49,7 @@ myCollection = new CollectionComponent
 	columns: 4
 	cellWidth: Screen.width / 4
 	cellHeight: 100
-	backgroundColor: "black"
-# 	cell: (cell) -> print cell.name
+	cell: (cell) ->
+		cell.html = cell.name
+		cell.style.lineHeight = cell.height + "px"
+		cell.style.textAlign  = "center"
