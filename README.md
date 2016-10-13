@@ -20,5 +20,8 @@ myCollection = new CollectionComponent
 		cell.onMouseOut -> this.html = coords
 ```
 
+
+
 <img width="1142" alt="screen shot 2016-10-12 at 1 33 37 pm" src="https://cloud.githubusercontent.com/assets/1941540/19298483/8d174202-9080-11e6-90fe-c48ec95e98de.png">
 
+<h3 align="center"><a href="http://share.framerjs.com/rvvb8xqdl17f/">[ DEMO ]</a></h3>
