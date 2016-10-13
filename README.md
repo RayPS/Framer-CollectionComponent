@@ -19,8 +19,8 @@ myCollection = new CollectionComponent
 		cell.borderRadius = 5
 ```
 
-
-
-<img width="1142" alt="screen shot 2016-10-12 at 1 33 37 pm" src="https://cloud.githubusercontent.com/assets/1941540/19298483/8d174202-9080-11e6-90fe-c48ec95e98de.png">
-
 <h1 align="center">[ <a href="http://share.framerjs.com/jevnkuy1j17y/">DEMO</a> ]</h1>
+
+![](https://cloud.githubusercontent.com/assets/1941540/19346536/706decc2-9176-11e6-985b-0ceab8d55dd3.png)
+
+
