@@ -1,5 +1,8 @@
 # Framer-CollectionComponent
-Framer Module working in progress
+CollectionComponent Framer Module
+
+Put [CollectionComponent.coffee](modules/CollectionComponent.coffee) to `modules` folder in your project.
+
 
 ```coffeescript
 {CollectionComponent} = require 'CollectionComponent'
