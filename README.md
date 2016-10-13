@@ -10,10 +10,13 @@ Put [CollectionComponent.coffee](modules/CollectionComponent.coffee) to `modules
 myCollection = new CollectionComponent
 	amount: 24
 	columns: 4
-	gutter: 1
+	gutter: 0
 	cellWidth: Screen.width / 4
 	cellHeight: 100
 	cell: (cell) ->
+		cell.borderColor = "black"
+		cell.borderWidth = 1
+		cell.borderRadius = 5
 		coords = cell.html = cell.coords.x + ", " + cell.coords.y
 		cell.style = lineHeight: cell.height + "px", textAlign: "center"
 		cell.onMouseOver -> this.html = this.name
@@ -24,4 +27,4 @@ myCollection = new CollectionComponent
 
 <img width="1142" alt="screen shot 2016-10-12 at 1 33 37 pm" src="https://cloud.githubusercontent.com/assets/1941540/19298483/8d174202-9080-11e6-90fe-c48ec95e98de.png">
 
-<h3 align="center"><a href="http://share.framerjs.com/rvvb8xqdl17f/">[ DEMO ]</a></h3>
+<h3 align="center"><a href="http://share.framerjs.com/c8lfazivarmy/">[ DEMO ]</a></h3>
