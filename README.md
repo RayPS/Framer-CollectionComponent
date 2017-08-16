@@ -1,7 +1,9 @@
 # Framer-CollectionComponent
 CollectionComponent Framer Module
 
-Put [CollectionComponent.coffee](modules/CollectionComponent.coffee) to `modules` folder in your project.
+
+### Usage:
+Put [CollectionComponent.coffee](modules/CollectionComponent.coffee) into the `modules` folder of your project.
 
 
 ```coffeescript
@@ -18,6 +20,8 @@ myCollection = new CollectionComponent
 		cell.borderWidth = 1
 		cell.borderRadius = 5
 ```
+
+<a href="#"><img width="160px" src='fm-badge@2x.png'></a>
 
 <h1 align="center">[ <a href="http://share.framerjs.com/jevnkuy1j17y/">DEMO</a> ]</h1>
 
