@@ -1,0 +1,11 @@
+{
+    "name": "Collection Component",
+    "description": "Framer Collection Component",
+    "author": "rayps",
+
+    "require": "{CollectionComponent} = require \"CollectionComponent\"",
+    "install": "CollectionComponent.coffee",
+    "example": "snippet.coffee",
+
+    "thumb": "thumb@2x.png"
+}
